@@ -1,0 +1,239 @@
+/******* 關於逸峰******/
+.aboutus-section {
+    padding: 60px 40px;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.aboutus-title {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #999;
+}
+
+.aboutus-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.venn-image img {
+    max-width: 320px;
+    height: auto;
+}
+
+.aboutus-text {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+/******* 關於逸峰******/
+
+/******* 工程實績******/
+.container {
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* 加這行讓 container 水平置中 */
+    padding: 40px;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.8;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.title {
+    font-size: 48px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.read-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #f0f0f0;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 原有樣式略過，補上新的 RWD */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-section {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .text-section p {
+        font-size: 14px;
+    }
+
+    .read-more {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/******* 工程實績******/
+
+/******* 機具租賃******/
+/* 共用排版 */
+.machine-container,
+.news-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.8;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.text-section {
+    flex: 1 1 400px;
+    min-width: 300px;
+}
+  
+  .title {
+    font-size: 48px;
+    color: #999;
+    margin-bottom: 20px;
+  }
+  
+  .text-section p {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .read-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .grid-section {
+    flex: 1 1 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+  }
+  
+  .machine-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* RWD for tablet */
+  @media screen and (max-width: 1024px) {
+    .machine-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .text-section {
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .grid-section {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+  }
+  
+  /* RWD for mobile */
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 32px;
+    }
+  
+    .text-section p {
+      font-size: 14px;
+    }
+  
+    .read-more {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  
+    .grid-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+
+/******* 機具租賃******/
+
+
+/* 最新消息圖片 */
+.news-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
