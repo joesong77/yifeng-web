@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import "./Home.css";
 import vennImage from "../../assets/venn-diagram.png"
 import emginerImage from "../../assets/engineering-image.png"
