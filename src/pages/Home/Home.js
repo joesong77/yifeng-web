@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./Home.css";
 import vennImage from "../../assets/venn-diagram.png"
 import emginerImage from "../../assets/engineering-image.png"
@@ -14,11 +15,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
 import SwiperImage from '../../assets/image 36.png'
 const images = Array.from({ length: 6 }, (_, i) =>
     require(`../../assets/machine/machine${i + 1}.png`)
 );
+
 const Home = () => {
     return (
         <div>
@@ -64,7 +65,7 @@ const Home = () => {
                     </div>
     
                     <div className="aboutus-text">
-                    <div className="aboutus-title">關於逸峰</div>
+                    <div className="title">關於逸峰</div>
                         <p>
                             逸峰營造有限公司於民國89年9月設立，資本額為五佰萬元，創立初期以承攬國家公共工程及一般性民間工程為主，
                             這些年來已累積了豐富的工程施工經驗，對施工專業技術之提昇及工程品質嚴格控管均為公司經營目標。
@@ -78,6 +79,9 @@ const Home = () => {
                             在經營理念方面，以「誠、信、勤、穩」做為逸峰營造未來發展的共同行為準則。
                         </p>
                     </div>
+                    <Link to="/about">
+                    <button className="read-more"  >READ MORE →</button>
+                    </Link>
                 </div>
             </div>
 

@@ -23,8 +23,8 @@
     flex-wrap: nowrap; /* 強制並排 */
   }
   
-  .venn-image img {
-    max-width: 320px;
+  .venn-image2 img {
+    max-width: 420px;
     height: auto;
   }
   

@@ -18,7 +18,7 @@ const About = () => {
 
             {/* 下方：圖片 + 條列 並排 */}
             <div className="aboutus-bottom">
-                <div className="venn-image">
+                <div className="venn-image2">
                     <img src={vennImage} alt="永續經營圖示" />
                 </div>
                 <div className="aboutus-list">
