@@ -1,157 +1,284 @@
-.aboutus-container2 {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-    padding: 40px 20px;
-  }
-  
-  .aboutus-text {
-    font-size: 16px;
-    line-height: 2;
-    max-width: 900px;
-    color: #333;
-    text-align: left;
-  }
-  
-  .aboutus-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 60px;
-    flex-wrap: nowrap; /* 強制並排 */
-  }
-  
-  .venn-image2 img {
-    max-width: 320px;
-    height: auto;
-  }
-  
-  .aboutus-list {
-    max-width: 300px;
-    text-align: left;
-  }
-  
-  .aboutus-list ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    line-height: 2;
-  }
-  
-  /* ✅ RWD 當畫面縮小自動改成直向排列 */
-  @media (max-width: 768px) {
-    .aboutus-bottom {
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-    }
-  }
-  
+/******* 公用區******/
 
-  /* 按鈕切換樣式 */
+
+.aboutus-container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.aboutus-text {
+  font-size: 16px;
+  line-height: 2;
+  max-width: 900px;
+  color: #333;
+  text-align: left;
+}
+
+.aboutus-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: nowrap;
+  /* 強制並排 */
+}
+
+.venn-image2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutus-list {
+  max-width: 300px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.aboutus-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 2;
+}
+
+/* ✅ RWD 當畫面縮小自動改成直向排列 */
+@media (max-width: 768px) {
+  .aboutus-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+/******* 公用區******/
+
+/******* 按鈕切換樣式******/
+
 .aboutus-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-    flex-wrap: wrap;
-  }
-  
-  .aboutus-buttons button {
-    padding: 10px 24px;
-    font-size: 16px;
-    border: 2px solid #006400;
-    border-radius: 8px;
-    background-color: white;
-    color: #006400;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .aboutus-buttons button:hover,
-  .aboutus-buttons button.active {
-    background-color: #006400;
-    color: white;
-  }
-  
-  /* 整體區塊 */
-  .aboutus-section {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  /* 並排區塊（圖片 + 條列） */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.aboutus-buttons button {
+  padding: 10px 24px;
+  font-size: 16px;
+  border: 2px solid #006400;
+  border-radius: 8px;
+  background-color: white;
+  color: #006400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.aboutus-buttons button:hover,
+.aboutus-buttons button.active {
+  background-color: #006400;
+  color: white;
+}
+
+/* 整體區塊 */
+.aboutus-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* 並排區塊（圖片 + 條列） */
+.aboutus-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.aboutus-text {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.venn-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.aboutus-list {
+  max-width: 300px;
+  text-align: left;
+}
+
+.aboutus-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aboutus-list li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* 組織架構圖片區塊 */
+.org-structure-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.org-structure-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* RWD */
+@media (max-width: 768px) {
   .aboutus-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .aboutus-text {
-    max-width: 700px;
-    margin: 0 auto 30px;
-    text-align: left;
-    line-height: 1.8;
-    font-size: 16px;
-  }
-  
-  .venn-image img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 12px;
-  }
-  
+
+  .venn-image img,
   .aboutus-list {
-    max-width: 300px;
-    text-align: left;
+    max-width: 100%;
   }
-  
-  .aboutus-list ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .aboutus-list li {
-    margin-bottom: 10px;
+
+  .aboutus-text {
     font-size: 15px;
   }
-  
-  /* 組織架構圖片區塊 */
-  .org-structure-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  
-  .org-structure-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* RWD */
-  @media (max-width: 768px) {
-    .aboutus-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .venn-image img,
-    .aboutus-list {
-      max-width: 100%;
-    }
-  
-    .aboutus-text {
-      font-size: 15px;
-    }
-  }
+}
 
-  .org-structure-img{
-    width: 80%;
-  }
+/******* 按鈕切換樣式******/
+
+
+
+
+
+/******* 企業組織架構******/
+
+.org-note {
+  margin-top: 2rem;
+  max-width: 800px;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+
+
+}
+
+.note-title {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.note-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.note-flow {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/******* 企業組織架構******/
+
+
+/******* 工程技術******/
+.eng-container {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fdfdfd;
+  font-family: "Microsoft JhengHei", sans-serif;
+  line-height: 1.8;
+}
+.eng-intro-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.eng-intro-left {
+  flex: 0 0 130px;
+}
+
+.eng-intro-left h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.eng-intro-right {
+  flex: 1;
+  border-left: 4px solid #333;
+  padding-left: 1rem;
+}
+
+.eng-intro-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 0 0.8rem;
+}
+
+.eng-intro-highlight {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+
+.eng-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.eng-subtitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.eng-desc {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.eng-section {
+  margin-bottom: 2rem;
+}
+
+.eng-section-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.eng-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.eng-section li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}

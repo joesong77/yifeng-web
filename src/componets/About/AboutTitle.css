@@ -1,0 +1,64 @@
+.ab-intro-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+  }
+  
+  .ab-intro-left {
+    flex: 0 0 130px;
+  }
+  
+  .ab-intro-left h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .ab-intro-right {
+    flex: 1;
+    border-left: 4px solid #333;
+    padding-left: 1rem;
+  }
+  
+  .ab-intro-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0 0 0.8rem;
+  }
+  
+  .ab-intro-highlight {
+    font-weight: bold;
+    font-size: 1.05rem;
+  }
+  /* ✅ RWD：手機版處理 */
+@media (max-width: 768px) {
+    .ab-intro-container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .ab-intro-left {
+      flex: none;
+      margin-bottom: 1rem;
+    }
+  
+    .ab-intro-right {
+      border-left: none;
+      padding-left: 0;
+      border-top: 3px solid #333;
+      padding-top: 1rem;
+    }
+  
+    .ab-intro-left h1 {
+      font-size: 1.5rem;
+    }
+  
+    .ab-intro-content p {
+      font-size: 0.95rem;
+    }
+  }
+  
