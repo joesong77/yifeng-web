@@ -27,8 +27,8 @@
   user-select: none;
   color: #333;
   background-color: #ccc;
-  border-radius: 50%;
-  width: 40px;
+  border-radius: 20%;
+  width: 60px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@
 
 /* 右邊箭頭靠圖片左邊外側（避免重疊） */
 .custom-swiper-button-next {
-  left: calc(25% - 10px); /* 比左邊箭頭再往右一點點 */
+  left: calc(25% - -30px); /* 比左邊箭頭再往右一點點 */
 }
 /* 分頁容器樣式 */
 .custom-swiper-pagination {
@@ -109,15 +109,20 @@
 
 
 .aboutus-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  /* 水平置中 */
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* 加這行讓 container 水平置中 */
+  padding: 40px;
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.8;
 }
 
 .venn-image img {
-    max-width: 250px;
+    max-width: 400px;
     height: auto;
 }
 

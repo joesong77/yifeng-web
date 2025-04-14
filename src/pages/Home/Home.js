@@ -52,7 +52,7 @@ const Home = () => {
                     <div className="custom-nav custom-swiper-button-prev">←</div>
                     <div className="custom-nav custom-swiper-button-next">→</div>
                     {/* 分頁數字容器 */}
-                    <div className="custom-swiper-pagination"></div>
+                    {/* <div className="custom-swiper-pagination"></div> */}
                 </Swiper>
 
 
@@ -63,6 +63,7 @@ const Home = () => {
                     <div className="venn-image">
                         <img src={vennImage} alt="永續經營Venn圖" />
                     </div>
+                    
     
                     <div className="aboutus-text">
                     <div className="title">關於逸峰</div>
@@ -79,9 +80,10 @@ const Home = () => {
                             在經營理念方面，以「誠、信、勤、穩」做為逸峰營造未來發展的共同行為準則。
                         </p>
                     </div>
-                    <Link to="/about">
+                    {/* <Link to="/about">
                     <button className="read-more"  >READ MORE →</button>
-                    </Link>
+                    </Link> */}
+                   
                 </div>
             </div>
 

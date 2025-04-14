@@ -65,13 +65,13 @@ const About = () => {
                     <div className="aboutus-container2">
                         <AboutTItle title="企業組織架構" />
 
-                        <div className="org-structure-container">
+                       
                             <div className="venn-image2">
                                 <img src={orgImage} alt="企業組織架構圖" />
                             </div>
 
 
-                        </div>
+                        
                     </div>
                     <div className="org-note">
                         <p className="note-title">■ 注意：品質管理、提升「經營績效」，保障「施工安全」逐步落實ISO 9000品質要求。實施：</p>

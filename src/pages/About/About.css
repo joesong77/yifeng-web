@@ -1,3 +1,30 @@
+/******* 按鈕切換樣式******/
+
+.aboutus-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.aboutus-buttons button {
+  padding: 10px 24px;
+  font-size: 16px;
+  border: 2px solid #006400;
+  border-radius: 8px;
+  background-color: white;
+  color: #006400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.aboutus-buttons button:hover,
+.aboutus-buttons button.active {
+  background-color: #006400;
+  color: white;
+}
+
 /******* 公用區******/
 
 
@@ -26,10 +53,14 @@
   flex-wrap: nowrap;
   /* 強制並排 */
 }
+.venn-image2 {
+  text-align: center;
+}
 
 .venn-image2 img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+
 }
 
 .aboutus-list {
@@ -47,7 +78,7 @@
 /* ✅ RWD 當畫面縮小自動改成直向排列 */
 @media (max-width: 768px) {
   .aboutus-bottom {
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
     gap: 30px;
   }
@@ -55,32 +86,6 @@
 
 /******* 公用區******/
 
-/******* 按鈕切換樣式******/
-
-.aboutus-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 20px 0;
-  flex-wrap: wrap;
-}
-
-.aboutus-buttons button {
-  padding: 10px 24px;
-  font-size: 16px;
-  border: 2px solid #006400;
-  border-radius: 8px;
-  background-color: white;
-  color: #006400;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.aboutus-buttons button:hover,
-.aboutus-buttons button.active {
-  background-color: #006400;
-  color: white;
-}
 
 /* 整體區塊 */
 .aboutus-section {
@@ -135,12 +140,7 @@
   margin-top: 30px;
 }
 
-.org-structure-container img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-}
+
 
 /* RWD */
 @media (max-width: 768px) {
@@ -184,8 +184,10 @@
 .note-title {
   font-weight: bold;
   margin-top: 1rem;
+  font-size: 20px;
 }
 .note-list {
+  font-size: 16px;
   list-style-type: disc;
   padding-left: 1.5rem;
   margin-top: 0.5rem;
@@ -197,6 +199,27 @@
   line-height: 1.6;
 }
 
+/* ✅ RWD */
+@media (max-width: 768px) {
+  .org-note {
+    font-size: 0.9rem;
+    padding: 1rem 1rem;
+  }
+
+  .note-title {
+    font-size: 18px;
+  }
+
+  .note-list {
+    font-size: 15px;
+    padding-left: 1.2rem;
+  }
+
+  .note-flow {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+}
 /******* 企業組織架構******/
 
 

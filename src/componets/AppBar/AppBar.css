@@ -15,9 +15,7 @@
   
   .menu {
     display: flex;
-
     gap: 32px;
-
 
   }
   
@@ -46,6 +44,7 @@
     border: none;
     display: none;
     cursor: pointer;
+    font-size: 30px;
   }
   
   .mobile-menu {
