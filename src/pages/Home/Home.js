@@ -35,7 +35,7 @@ const Home = () => {
                         type: 'fraction',
                         el: '.custom-swiper-pagination',
                     }}
-                    scrollbar={{ draggable: true }}
+                
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                     className="swiper"
@@ -57,12 +57,14 @@ const Home = () => {
 
             </div>
             <div className="aboutus-section">
-                <div className="aboutus-title">關於逸峰</div>
+    
                 <div className="aboutus-container">
                     <div className="venn-image">
                         <img src={vennImage} alt="永續經營Venn圖" />
                     </div>
+    
                     <div className="aboutus-text">
+                    <div className="aboutus-title">關於逸峰</div>
                         <p>
                             逸峰營造有限公司於民國89年9月設立，資本額為五佰萬元，創立初期以承攬國家公共工程及一般性民間工程為主，
                             這些年來已累積了豐富的工程施工經驗，對施工專業技術之提昇及工程品質嚴格控管均為公司經營目標。

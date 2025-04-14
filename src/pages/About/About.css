@@ -1,0 +1,50 @@
+.aboutus-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .aboutus-text {
+    font-size: 16px;
+    line-height: 2;
+    max-width: 900px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .aboutus-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: nowrap; /* 強制並排 */
+  }
+  
+  .venn-image img {
+    max-width: 320px;
+    height: auto;
+  }
+  
+  .aboutus-list {
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .aboutus-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 2;
+  }
+  
+  /* ✅ RWD 當畫面縮小自動改成直向排列 */
+  @media (max-width: 768px) {
+    .aboutus-bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  
