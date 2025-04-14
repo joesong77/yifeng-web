@@ -1,13 +1,101 @@
+/* swiper 外層容器 */
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 自訂導航按鈕共用樣式 */
+.custom-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  color: #333;
+  background-color: #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 左邊箭頭靠圖片左邊內側 */
+.custom-swiper-button-prev {
+  left: calc(25% - 60px); /* 圖片是 50%，置右，所以 left 為 25% 左右減去位移 */
+}
+
+/* 右邊箭頭靠圖片左邊外側（避免重疊） */
+.custom-swiper-button-next {
+  left: calc(25% - 10px); /* 比左邊箭頭再往右一點點 */
+}
+/* 分頁容器樣式 */
+.custom-swiper-pagination {
+  position: absolute;
+  left: 20px; /* 和 prev 箭頭對齊 */
+  top: calc(50% + 30px); /* 箭頭垂直中心 + 箭頭高20px + 間距10px */
+  color: #333;
+  font-size: 20px;
+  z-index: 10;
+}
+/* RWD */
+@media (max-width: 768px) {
+  .swiper-container {
+    height: 100%;
+  }
+
+  .custom-nav {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .custom-swiper-button-prev {
+    left: calc(25% - 50px);
+  }
+
+  .custom-swiper-button-next {
+    left: calc(25% - 5px);
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-container {
+    height: 100%;
+  }
+
+  .custom-nav {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .custom-swiper-button-prev {
+    left: calc(25% - 45px);
+  }
+
+  .custom-swiper-button-next {
+    left: calc(25% - 5px);
+  }
+}
+
+
+
 /******* 關於逸峰******/
 .aboutus-section {
-    padding: 60px 40px;
+
+
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #fff;
     color: #333;
 }
 
 .aboutus-title {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 40px;
@@ -55,7 +143,7 @@
 }
 
 .title {
-    font-size: 48px;
+    font-size: 40px;
     color: #999;
     margin-bottom: 20px;
 }
@@ -149,7 +237,7 @@
 }
   
   .title {
-    font-size: 48px;
+    font-size: 40px;
     color: #999;
     margin-bottom: 20px;
   }

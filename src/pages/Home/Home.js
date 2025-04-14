@@ -3,13 +3,59 @@ import "./Home.css";
 import vennImage from "../../assets/venn-diagram.png"
 import emginerImage from "../../assets/engineering-image.png"
 import newsImage from "../../assets/news-Image.png"
+// React 元件从這裡來
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// 功能模組從 swiper/modules 引入
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+// 引入 CSS（必要）
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+import SwiperImage from '../../assets/image 36.png'
 const images = Array.from({ length: 6 }, (_, i) =>
     require(`../../assets/machine/machine${i + 1}.png`)
 );
 const Home = () => {
     return (
         <div>
+            <div className="swiper-container">
+                <Swiper
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    navigation={{
+                        prevEl: '.custom-swiper-button-prev',
+                        nextEl: '.custom-swiper-button-next'
+                    }}
+                    pagination={{
+                        type: 'fraction',
+                        el: '.custom-swiper-pagination',
+                    }}
+                    scrollbar={{ draggable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    className="swiper"
+                >
+                    <SwiperSlide style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+                        <img src={SwiperImage} alt="" width="50%" height="50%" />
+                    </SwiperSlide>
+                    <SwiperSlide style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+                        <img src={SwiperImage} alt="" width="50%" height="50%" />
+                    </SwiperSlide>
+                    {/* 自訂的箭頭按鈕，位置完全由 CSS 決定 */}
+
+                    <div className="custom-nav custom-swiper-button-prev">←</div>
+                    <div className="custom-nav custom-swiper-button-next">→</div>
+                    {/* 分頁數字容器 */}
+                    <div className="custom-swiper-pagination"></div>
+                </Swiper>
+
+
+            </div>
             <div className="aboutus-section">
                 <div className="aboutus-title">關於逸峰</div>
                 <div className="aboutus-container">

@@ -1,12 +1,14 @@
 import React from "react";
 import "./FooTer.css";
 import { FaFacebookF } from "react-icons/fa";
-
+import logoImage from '../FooTer/logo2.png'
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
+
         <div className="footer-section company-name">
+          <img src={logoImage} alt="EA 逸峰營造" width={'25%'} />
           <h3>逸峰營造有限公司</h3>
         </div>
         <div className="footer-section contacts">
