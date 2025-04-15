@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home"
 import Excavator from "./pages/Excavator/Excavators"
 import AppBar from "./componets/AppBar/AppBar"
 
-import FooTer from "./componets/Footer/Footer";
+import FooTer from "./componets/FooTer/FooTer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
