@@ -41,12 +41,12 @@ const excavatorData = {
 
     ],
     other: [
-        { src: img13, label: "" },
-        { src: img14, label: "" },
-        { src: img15, label: "" },
-        { src: img16, label: "" },
-        { src: img17, label: "" },
-        { src: img18, label: "" },
+        { src: img13, label: "470裝載機" },
+        { src: img14, label: "13噸壓路機" },
+        { src: img15, label: "小山貓" },
+        { src: img16, label: "推土機" },
+        { src: img17, label: "小壓路機" },
+        { src: img18, label: "鏟裝機" },
 
 
     ]
