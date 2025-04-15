@@ -9,14 +9,17 @@ function AppBar() {
   return (
     <header className="appbar">
       <div className="logo">
+        <a href="/">
         <img src={logoImage} alt="EA 逸峰營造" width={'50%'} />
+        </a> 
+       
       </div>
 
       <nav className="menu">
         <a href="/" className="menu-item">MAIN</a>
         <a href="/about" className="menu-item">關於逸峰</a>
         <a href="#/"className="menu-item">工程實績</a>
-        <a href="#/" className="menu-item">機具租賃</a>
+        <a href="/excavator" className="menu-item">機具租賃</a>
         <a href="#/" className="menu-item">最新消息</a>
       </nav>
 
@@ -29,7 +32,7 @@ function AppBar() {
           <a href="/" className="mobile-menu-item">MAIN</a>
           <a href="/about" className="mobile-menu-item">關於逸峰</a>
           <a href="#/" className="mobile-menu-item">工程實績</a>
-          <a href="#/" className="mobile-menu-item">機具租賃</a>
+          <a href="/excavator" className="mobile-menu-item">機具租賃</a>
           <a href="#/" className="mobile-menu-item">最新消息</a>
         </div>
       )}

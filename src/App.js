@@ -2,8 +2,9 @@
 import './App.css';
 import About from "./pages/About/About"
 import Home from "./pages/Home/Home"
+import Excavator from "./pages/Excavator/Excavators"
 import AppBar from "./componets/AppBar/AppBar"
-import FooTer from "./componets/FooTer/FooTer"
+import Footer from "./componets/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,9 +21,12 @@ function App() {
           <Routes>
             <Route path="/about" element={<About />} />
           </Routes>
+          <Routes>
+            <Route path="/excavator" element={<Excavator  />} />
+          </Routes>
         </main>
 
-        <FooTer />
+        <Footer />
 
       </div>
     </Router>
