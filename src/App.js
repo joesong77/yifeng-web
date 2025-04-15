@@ -4,6 +4,7 @@ import About from "./pages/About/About"
 import Home from "./pages/Home/Home"
 import Excavator from "./pages/Excavator/Excavators"
 import AppBar from "./componets/AppBar/AppBar"
+
 import Footer from "./componets/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
