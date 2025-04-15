@@ -28,7 +28,7 @@ const excavatorData = {
         { src: img3, label: "370型怪手" },
         { src: img4, label: "300型怪手" },
         { src: img5, label: "200型怪手" },
-        { src: img6, label: "200型怪手(短手頓皮勺)" },
+        { src: img6, label: "頑皮豹" },
     ],
     small: [
         { src: img7, label: "130型怪手(短手頓皮勺)" },
