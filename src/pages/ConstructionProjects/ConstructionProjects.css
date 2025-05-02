@@ -1,0 +1,61 @@
+/* ConstructionProjects.css */
+.projects-container {
+    max-width: 960px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.projects-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+.projects-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+
+.projects-tabs button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projects-tabs button:hover {
+    background-color: #eaeaea;
+    border-color: #999;
+}
+
+.projects-tabs button.active {
+    background-color: #0066cc;
+    color: #fff;
+    border-color: #0066cc;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

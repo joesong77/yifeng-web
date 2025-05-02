@@ -3,6 +3,7 @@ import './App.css';
 import About from "./pages/About/About"
 import Home from "./pages/Home/Home"
 import Excavator from "./pages/Excavator/Excavators"
+import ConstructionProjects from "./pages/ConstructionProjects/ConstructionProjects"
 import AppBar from "./componets/AppBar/AppBar"
 
 import FooTer from "./componets/FooTer/FooTer";
@@ -24,6 +25,9 @@ function App() {
           </Routes>
           <Routes>
             <Route path="/excavator" element={<Excavator  />} />
+          </Routes>
+          <Routes>
+            <Route path="/construction" element={<ConstructionProjects  />} />
           </Routes>
         </main>
 
