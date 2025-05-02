@@ -1,91 +1,89 @@
 .excavator-container {
-    padding: 2rem 1rem;
+  padding: 20px;
+    font-family: Arial, sans-serif;
     max-width: 1200px;
     margin: 0 auto;
-    box-sizing: border-box;
-  }
-  
-  .excavator-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
-  }
-  .excavator-tabs {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 20px;
-    justify-content: center;
-  }
-  
-  .excavator-tabs button {
-    padding: 8px 16px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    background-color: #f9f9f9;
-    color: #333;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .excavator-tabs button:hover {
-    background-color: #eaeaea;
-    border-color: #999;
-  }
-  
-  .excavator-tabs button.active {
-    background-color: #0066cc;
-    color: #fff;
-    border-color: #0066cc;
-  }
-  
+
+}
+
+.excavator-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.excavator-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.excavator-tabs button {
+  padding: 10px 24px;
+  font-size: 16px;
+  border: 2px solid #006400;
+  border-radius: 8px;
+  background-color: white;
+  color: #006400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.excavator-tabs button:hover,
+.excavator-tabs button.active {
+  background-color: #006400;
+  color: white;
+}
+
+
+.excavator-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.excavator-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.excavator-card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.excavator-card p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* RWD 響應式設定 */
+@media (max-width: 992px) {
   .excavator-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .excavator-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+}
+
+@media (max-width: 600px) {
+  .excavator-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .excavator-card img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .excavator-title {
+    font-size: 1.4rem;
   }
-  
+
   .excavator-card p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.95rem;
   }
-  
-  /* RWD 響應式設定 */
-  @media (max-width: 992px) {
-    .excavator-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .excavator-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .excavator-title {
-      font-size: 1.4rem;
-    }
-  
-    .excavator-card p {
-      font-size: 0.95rem;
-    }
-  }
-  
+}
