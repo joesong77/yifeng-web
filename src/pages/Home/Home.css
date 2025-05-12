@@ -4,6 +4,9 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
   line-height: 1.8;
   color: #333;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .title {
@@ -64,7 +67,8 @@ body {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
 .swiperimage {
@@ -152,10 +156,13 @@ body {
 
 /******* 關於逸峰區 *******/
 .aboutus-section {
+  height: 100vh;
+  scroll-snap-align: start;
   background-color: #fff;
 }
 
 .aboutus-container {
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -188,6 +195,8 @@ body {
 
 /******* 工程實績區 *******/
 .container {
+  height: 100vh;
+  scroll-snap-align: start;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -226,6 +235,8 @@ body {
 /******* 機具租賃區 + 最新消息 *******/
 .machine-container,
 .news-container {
+  height: 100vh;
+  scroll-snap-align: start;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
