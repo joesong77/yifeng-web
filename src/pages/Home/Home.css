@@ -126,7 +126,7 @@ body {
 
 @media (max-width: 480px) {
   .swiperimage {
-    height: 250px;
+    height: 200px;
     width: 50%;
   }
 
