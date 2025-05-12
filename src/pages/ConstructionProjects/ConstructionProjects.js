@@ -204,7 +204,7 @@ const allProjectCategories = {
         title: "工程實積｜景觀工程實績",
         projects: [
             {
-                title: "第一美卡-場內綠化景觀工程",
+                title: "第一美卡-廠內綠化景觀工程",
                 images: [
                     { src: require("../../assets/construction/image 128.png"), alt: " 1" },
                     { src: require("../../assets/construction/image 129.png"), alt: " 2" },
