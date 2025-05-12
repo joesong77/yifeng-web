@@ -17,6 +17,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import SwiperImage from '../../assets/image 36.png'
+
+// 引入 動畫套件
+import { motion } from "framer-motion";
 const images = Array.from({ length: 6 }, (_, i) =>
     require(`../../assets/machine/machine${i + 1}.png`)
 );
@@ -62,7 +65,13 @@ const Home = () => {
 
                 <div className="aboutus-container">
                     <div className="venn-image">
-                        <img src={vennImage} alt="永續經營Venn圖" />
+                        <motion.img
+                            src={vennImage}
+                            alt="永續經營Venn圖"
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 2 }}
+                        />
                     </div>
 
 
@@ -100,7 +109,7 @@ const Home = () => {
                         逸峰營造的經營目的在於「創造價值」即「創造顧客價值、創造員工價值、創造公司價值」，在經營理念方面，以「誠、信、勤、穩」做為迴峰營造未來發展的共同行為準則。
                     </p>
                     <Link to="/construction">
-                    <button className="read-more">READ MORE →</button>
+                        <button className="read-more">READ MORE →</button>
                     </Link>
                 </div>
                 <div className="image-section">
@@ -120,7 +129,7 @@ const Home = () => {
                         透過專業的租賃服務，您可以根據不同工地作業環境選擇最適合的設備，確保施工品質與安全。我們也提供機具維護與技術支援，讓您無後顧之憂，專注於工程進度與業務發展。
                     </p>
                     <Link to="/excavator">
-                    <button className="read-more">READ MORE →</button>
+                        <button className="read-more">READ MORE →</button>
                     </Link>
                 </div>
                 <div className="image-section grid-section">
