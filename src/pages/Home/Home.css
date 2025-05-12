@@ -12,7 +12,7 @@ body {
   text-align: center;
   color: #999;
   margin-bottom: 20px;
-  
+
 }
 
 .text-section {
@@ -55,6 +55,7 @@ body {
     padding: 8px 16px;
   }
 }
+
 /******* 共用區 *******/
 
 
@@ -64,6 +65,11 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.swiperimage {
+  width: 50%;
+  height: 50%;
 }
 
 .custom-nav {
@@ -101,6 +107,7 @@ body {
   z-index: 10;
 }
 
+
 @media (max-width: 768px) {
   .custom-nav {
     font-size: 20px;
@@ -118,6 +125,12 @@ body {
 }
 
 @media (max-width: 480px) {
+  .swiperimage {
+    height: 250px;
+    width: 50%;
+  }
+
+
   .custom-nav {
     font-size: 18px;
     width: 30px;
@@ -132,6 +145,7 @@ body {
     left: calc(25% - 5px);
   }
 }
+
 /******* Swiper 幻燈片區 *******/
 
 
@@ -147,7 +161,6 @@ body {
   align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px;
 }
 
 .aboutus-text {
@@ -164,10 +177,11 @@ body {
 
 @media screen and (max-width: 480px) {
   .venn-image img {
-    max-width: 90%;
+    max-width: 80%;
   }
-  
+
 }
+
 /******* 關於逸峰區 *******/
 
 
@@ -204,6 +218,7 @@ body {
     margin-bottom: 30px;
   }
 }
+
 /******* 工程實績區 *******/
 
 
@@ -253,4 +268,5 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /******* 機具租賃區 + 最新消息 *******/

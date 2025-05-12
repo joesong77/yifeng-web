@@ -46,10 +46,10 @@ const Home = () => {
                     className="swiper"
                 >
                     <SwiperSlide style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-                        <img src={SwiperImage} alt="" width="50%" height="50%" />
+                        <img src={SwiperImage} alt="" className="swiperimage" />
                     </SwiperSlide>
                     <SwiperSlide style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-                        <img src={SwiperImage} alt="" width="50%" height="50%" />
+                        <img src={SwiperImage} alt="" className="swiperimage" />
                     </SwiperSlide>
                     {/* 自訂的箭頭按鈕，位置完全由 CSS 決定 */}
 
