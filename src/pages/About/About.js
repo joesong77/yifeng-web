@@ -132,18 +132,20 @@ const About = () => {
 
 
                         <div className="section">
-                            <p className="subtitle">• 持續重視專業技術精進與品質維護</p>
+                            <p >• 持續重視專業技術精進與品質維護</p>
                             <ul>
                                 <li>取得各項專業技術證照</li>
                                 <li>強化員工專業技術能力與安全維護觀念的提昇</li>
                                 <li>加強管理施工品質與施工流程合理規範</li>
                             </ul>
 
-                            <p className="subtitle">• 工程服務範圍擴展，多角化經營達成永續發展之目標</p>
-                            <p className="indent">
+                            <p>• 工程服務範圍擴展，多角化經營達成永續發展之目標</p>
+                            <ul>
+                            <li>
                                 除一般基本公共工程外，逐步提高民間建築工程、一般性土木工程、室內裝修工程...等之案件比例，
                                 以分散經營風險，並求增加承接各種工程之經驗與能力
-                            </p>
+                            </li>
+                            </ul>
                         </div>
                         <div className="venn-image2">
                             <img src={goalImage} alt="未來展望圖" />

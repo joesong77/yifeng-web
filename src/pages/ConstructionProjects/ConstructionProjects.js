@@ -136,18 +136,26 @@ const allProjectCategories = {
         title: "工程實積｜拆除工程實績",
         projects: [
             {
-                title: "富邦大樓逆打拆除",
+                title: "舊有地下室拆除工程",
                 images: [
-                    { src: require("../../assets/construction/image 98.png"), alt: "富邦大樓逆打 1" },
-                    { src: require("../../assets/construction/image 99.png"), alt: "富邦大樓逆打 2" },
-                    { src: require("../../assets/construction/image 100.png"), alt: "富邦大樓逆打 3" },
-                    { src: require("../../assets/construction/image 101.png"), alt: "富邦大樓逆打 4" },
-                    { src: require("../../assets/construction/image 102.png"), alt: "富邦大樓逆打 5" },
-                    { src: require("../../assets/construction/image 103.png"), alt: "富邦大樓逆打 6" },
+                    { src: require("../../assets/construction/image 98.png"), alt: "舊有地下室 1" },
+                    { src: require("../../assets/construction/image 99.png"), alt: "舊有地下室 2" },
+                    { src: require("../../assets/construction/image 100.png"), alt: "舊有地下室 3" },
+                  
                 ]
             },
             {
-                title: "此為特殊拆除案件-歷史建築將外牆保留其於樑柱版拆除後重建• (現為陽明海洋博物館)",
+                title: "房屋拆除工程案例(一)",
+                title1:"",
+                images: [
+                    { src: require("../../assets/construction/image 101.png"), alt: "房屋拆除工程案例一" },
+                    { src: require("../../assets/construction/image 102.png"), alt: "房屋拆除工程案例一" },
+                    { src: require("../../assets/construction/image 103.png"), alt: "房屋拆除工程案例一" },
+                ]
+            },
+            {
+                title: "房屋拆除工程案例(二)",
+                title1:"此為特殊拆除案件-歷史建築將外牆保留其於樑柱版拆除後重建• (現為陽明海洋博物館)",
                 images: [
                     { src: require("../../assets/construction/image 104.png"), alt: "陽明海洋博物館 1" },
                     { src: require("../../assets/construction/image 105.png"), alt: "陽明海洋博物館 2" },
@@ -158,12 +166,22 @@ const allProjectCategories = {
 
             },
             {
-                title: "此為連棟四層公寓，局部拆除並作保留戶結構補強工程",
+                title:"房屋拆除工程案例(三)",
+                title1: "新北市永和區自由街拆除補強工程，此為連棟四層公寓，局部拆除並作保留戶結構補強工程",
                 images: [
                     { src: require("../../assets/construction/image 107.png"), alt: "結構補強工程 1" },
                     { src: require("../../assets/construction/image 108.png"), alt: "結構補強工程 2" },
                     { src: require("../../assets/construction/image 109.png"), alt: "結構補強工程 3" },
                     { src: require("../../assets/construction/image 110.png"), alt: "結構補強工程 4" },
+                  
+
+
+                ]
+
+            }, {
+                title:"房屋拆除工程案例(四)",
+                title1: "",
+                images: [
                     { src: require("../../assets/construction/image 111.png"), alt: "結構補強工程 5" },
                     { src: require("../../assets/construction/image 112.png"), alt: "結構補強工程 6" },
                     { src: require("../../assets/construction/image 113.png"), alt: "結構補強工程 7" },
@@ -172,7 +190,8 @@ const allProjectCategories = {
 
                 ]
 
-            }
+            },
+           
 
         ]
     },
@@ -180,14 +199,14 @@ const allProjectCategories = {
         title: "工程實積｜景觀工程實績",
         projects: [
             {
-                title: "陽明山國家公園人行步道改善工程",
+                title: "",
                 images: [
-                    { src: require("../../assets/construction/image 128.png"), alt: "陽明山國家公園 1" },
-                    { src: require("../../assets/construction/image 129.png"), alt: "陽明山國家公園 2" },
-                    { src: require("../../assets/construction/image 130.png"), alt: "陽明山國家公園 3" },
-                    { src: require("../../assets/construction/image 131.png"), alt: "陽明山國家公園 4" },
-                    { src: require("../../assets/construction/image 132.png"), alt: "陽明山國家公園 5" },
-                    { src: require("../../assets/construction/image 133.png"), alt: "陽明山國家公園 6" },
+                    { src: require("../../assets/construction/image 128.png"), alt: " 1" },
+                    { src: require("../../assets/construction/image 129.png"), alt: " 2" },
+                    { src: require("../../assets/construction/image 130.png"), alt: " 3" },
+                    { src: require("../../assets/construction/image 131.png"), alt: " 4" },
+                    { src: require("../../assets/construction/image 132.png"), alt: " 5" },
+                    { src: require("../../assets/construction/image 133.png"), alt: " 6" },
                 ]
             },
 
@@ -216,9 +235,11 @@ const ConstructionProjects = () => {
                 <button onClick={() => setCurrentCategory("landscape")}>景觀工程</button>
             </div>
             <h2 className="projects-title">{title}</h2>
+
             {projects.map((proj, i) => (
                 <div key={i}>
                     <p className="subtitle">{proj.title}</p>
+                    <p className="subtitle">{proj.title1}</p>
                     <div className="image-grid">
                         {proj.images.length > 0 ? (
                             proj.images.map((img, j) => (

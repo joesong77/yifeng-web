@@ -148,6 +148,14 @@
     flex-direction: column;
     align-items: center;
   }
+  .aboutus-container2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .venn-image2 img,
+  .aboutus-list {
+    max-width: 100%;
+  }
 
   .venn-image img,
   .aboutus-list {
