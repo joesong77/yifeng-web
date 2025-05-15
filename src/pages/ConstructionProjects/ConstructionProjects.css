@@ -58,8 +58,10 @@
   }
  */
 .project-swiper {
-  margin: 0 auto;           /* 水平置中 */
-  max-width: 1200px;         /* 視需要限制寬度 */
+  margin: 0 auto;
+  /* 水平置中 */
+  max-width: 1200px;
+  /* 視需要限制寬度 */
 
 }
 
@@ -98,6 +100,14 @@
 
 /* ✅ 手機裝置：圖片寬度 90%，自動高度 */
 @media (max-width: 600px) {
+  .project-swiper {
+    margin: 0 auto;
+    /* 水平置中 */
+    max-width: 1200px;
+    /* 視需要限制寬度 */
+
+  }
+
   .projects-title {
     font-size: 20px;
   }
