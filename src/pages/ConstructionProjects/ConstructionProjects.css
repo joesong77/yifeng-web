@@ -57,15 +57,15 @@
     margin-bottom: 32px;
   }
  */
-.image-grid {
-  margin-left: 50px;
-  margin-right: 50px;
+.project-swiper {
+  margin: 0 auto;           /* 水平置中 */
+  max-width: 1200px;         /* 視需要限制寬度 */
 
 }
 
-.image-grid img {
+.project-slide img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: 300px;
   margin: 0 auto;
   display: block;
@@ -76,7 +76,7 @@
 }
 
 
-.image-grid img:hover {
+.project-slide img:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }

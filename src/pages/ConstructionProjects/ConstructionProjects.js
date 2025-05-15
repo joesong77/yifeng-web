@@ -249,9 +249,10 @@ const ConstructionProjects = () => {
                         {proj.images.length > 0 ? (
 
                             <Swiper
+                                className="project-swiper"
                                 spaceBetween={10}
                                 navigation
-                                pagination={{ clickable: true }}
+                               
                                 modules={[Navigation, Pagination]}
                                 breakpoints={{
                                     320: { slidesPerView: 1 },
@@ -261,7 +262,7 @@ const ConstructionProjects = () => {
                                 }}
                             >
                                 {proj.images.map((img, j) => (
-                                    <SwiperSlide key={j}>
+                                    <SwiperSlide key={j} className="project-slide">
                                         <img src={img.src} alt={img.alt} />
                                     </SwiperSlide>
                                 ))}
