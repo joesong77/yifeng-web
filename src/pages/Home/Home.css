@@ -133,8 +133,8 @@ body {
 
 @media (max-width: 480px) {
   .swiperimage {
-    height: 200px;
-    width: 50%;
+    height: 350px;
+    max-width: 100%;
   }
 
 
@@ -184,7 +184,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .venn-image img {
-    max-width: 80%;
+    max-width: 70%;
   }
 
 }
