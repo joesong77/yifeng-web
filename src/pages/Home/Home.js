@@ -19,6 +19,7 @@ import 'swiper/css/scrollbar';
 
 import img36 from "../../assets/image 36.png";
 import img37 from "../../assets/image 37.png";
+import img38 from "../../assets/image 38.png";
 // 引入 動畫套件
 import { motion } from "framer-motion";
 const images = Array.from({ length: 6 }, (_, i) =>
@@ -33,6 +34,10 @@ const swiperData = [
     {
         id: 2,
         image: img37,
+    },
+     {
+        id: 3,
+        image: img38,
     },
    
 ];
