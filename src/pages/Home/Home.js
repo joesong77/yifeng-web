@@ -17,27 +17,29 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import img36 from "../../assets/image 36.png";
-import img37 from "../../assets/image 37.png";
-import img38 from "../../assets/image 38.png";
+import img1 from "../../assets/首頁輪播照片/image1.png";
+import img2 from "../../assets/首頁輪播照片/image2.png";
+import img3 from "../../assets/首頁輪播照片/image3.png";
+
 // 引入 動畫套件
 import { motion } from "framer-motion";
 const images = Array.from({ length: 6 }, (_, i) =>
     require(`../../assets/machine/machine${i + 1}.png`)
 );
 
+
 const swiperData = [
     {
         id: 1,
-        image: img36,
+        image: img1,
     },
     {
         id: 2,
-        image: img37,
+        image: img2,
     },
      {
         id: 3,
-        image: img38,
+        image: img3,
     },
    
 ];
