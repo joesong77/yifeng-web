@@ -16,13 +16,26 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import SwiperImage from '../../assets/image 36.png'
 
+import img36 from "../../assets/image 36.png";
+import img37 from "../../assets/image 37.png";
 // 引入 動畫套件
 import { motion } from "framer-motion";
 const images = Array.from({ length: 6 }, (_, i) =>
     require(`../../assets/machine/machine${i + 1}.png`)
 );
+
+const swiperData = [
+    {
+        id: 1,
+        image: img36,
+    },
+    {
+        id: 2,
+        image: img37,
+    },
+   
+];
 
 const Home = () => {
     return (
@@ -45,12 +58,18 @@ const Home = () => {
                     onSlideChange={() => console.log('slide change')}
                     className="swiper"
                 >
-                    <SwiperSlide style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-                        <img src={SwiperImage} alt="" className="swiperimage" />
-                    </SwiperSlide>
-                    <SwiperSlide style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-                        <img src={SwiperImage} alt="" className="swiperimage" />
-                    </SwiperSlide>
+                    {swiperData.map((item) => (
+                        <SwiperSlide
+                            key={item.id}
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'flex-end',
+                                alignItems: 'center'
+                            }}
+                        >
+                            <img src={item.image} alt="" className="swiperimage" />
+                        </SwiperSlide>
+                    ))}
                     {/* 自訂的箭頭按鈕，位置完全由 CSS 決定 */}
 
                     <div className="custom-nav custom-swiper-button-prev">←</div>
@@ -71,7 +90,7 @@ const Home = () => {
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 2 }}
-                            viewport={{ once: true, amount: 0.5 }} 
+                            viewport={{ once: true, amount: 0.5 }}
                         />
                     </div>
 
@@ -103,12 +122,10 @@ const Home = () => {
                 <div className="text-section">
                     <h1 className="title">工程實績</h1>
                     <p>
-                        逸峰營造有限公司於民國89年9月成立，資本額為五佰萬元，創立初期以承攬國家公共工程及一般性民間工程為主，這些年來已累積了豐富的工程施工經驗，對施工專業技術及工程品質嚴格控管皆為公司經營目標。
-                        「積極主動、安全至善」是逸峰營造的特質，隨著各企業指導不斷的成長，確立迴峰營造的充滿宏觀與氣度的企業使命—以「專業、品質、服務、安全」滿足業主的需求。
+                        逸峰營造有限公司成立於民國89年,長期深耕於土木與基礎工程領域,主要承攬公共工程及民間建設,累積豐富施工經驗。其工程實績包括臺北市政府工務局水利工程處、大地工程處及
+                        各區公所等,參與多項水利設施維護、河濱公園整建及下水道相關工程,如雨水下水道人孔調升、河濱步道改善及防災復原工程等,展現其在都市基礎建設與公共工程維護上的專業能力。
                     </p>
-                    <p>
-                        逸峰營造的經營目的在於「創造價值」即「創造顧客價值、創造員工價值、創造公司價值」，在經營理念方面，以「誠、信、勤、穩」做為迴峰營造未來發展的共同行為準則。
-                    </p>
+
                     <Link to="/construction">
                         <button className="read-more">READ MORE →</button>
                     </Link>
@@ -143,8 +160,8 @@ const Home = () => {
                 <div className="text-section">
                     <h1 className="title">最新消息</h1>
                     <ul className="news-list">
-                        <li>•2022獲選臺北市政府公共工程卓越獎。</li>
-                        <li>•2022獲選臺北市政府卓越匠師獎。</li>
+                        <li>2022獲選臺北市政府公共工程卓越獎。</li>
+                        <li>2022獲選臺北市政府卓越匠師獎。</li>
                     </ul>
                     <button className="read-more">READ MORE →</button>
                 </div>

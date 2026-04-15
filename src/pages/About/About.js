@@ -4,8 +4,6 @@ import vennImage from "../../assets/venn-diagram.png";
 import orgImage from "../../assets/org-structure.png";
 import centuryImage from "../../assets/century.png";
 import goalImage from "../../assets/goal-image.png";
-
-
 import AboutTItle from "../../componets/About/AboutTitle"
 
 const About = () => {
