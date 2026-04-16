@@ -233,7 +233,7 @@ const ConstructionProjects = () => {
         <div className="projects-container">
             <div className="projects-tabs">
                 <button onClick={() => setCurrentCategory("building")}>建築工程</button>
-                <button onClick={() => setCurrentCategory("civil")}>土木工程</button>
+                <button onClick={() => setCurrentCategory("civil")}>土方工程</button>
                 <button onClick={() => setCurrentCategory("conservation")}>水保工程</button>
                 <button onClick={() => setCurrentCategory("prevention")}>防汛工程</button>
                 <button onClick={() => setCurrentCategory("teardown")}>拆除工程</button>
