@@ -1,5 +1,10 @@
 /* ConstructionProjects.css */
-
+.projects-loading {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 18px;
+    color: #666;
+}
 .projects-container {
   padding: 25px;
 }

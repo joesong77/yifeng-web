@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import "./ConstructionProjects.css";
 // React 元件从這裡來
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -225,9 +225,19 @@ const allProjectCategories = {
 const ConstructionProjects = () => {
     const [currentCategory, setCurrentCategory] = useState("building");
 
-
+    const [loading, setLoading] = useState(false);
 
     const { title, projects } = allProjectCategories[currentCategory];
+     // ⭐監聽分類切換
+    useEffect(() => {
+        setLoading(true);
+
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 300); // 可調整時間
+
+        return () => clearTimeout(timer);
+    }, [currentCategory]);
 
     return (
         <div className="projects-container">
@@ -240,39 +250,41 @@ const ConstructionProjects = () => {
                 <button onClick={() => setCurrentCategory("landscape")}>景觀工程</button>
             </div>
             <h2 className="projects-title">{title}</h2>
-
-            {projects.map((proj, i) => (
-                <div key={i}>
-                    <p className="subtitle">{proj.title}</p>
-                    <p className="subtitle1">{proj.title1}</p>
-                    <div className="image-grid">
-                        {proj.images.length > 0 ? (
-
-                            <Swiper
-                                className="project-swiper"
-                                spaceBetween={10}
-                                navigation
-                               
-                                modules={[Navigation, Pagination]}
-                                breakpoints={{
-                                    320: { slidesPerView: 1 },
-                                    640: { slidesPerView: 2 },
-                                    1024: { slidesPerView: 3 },
-                                    1440: { slidesPerView: 4 },
-                                }}
-                            >
-                                {proj.images.map((img, j) => (
-                                    <SwiperSlide key={j} className="project-slide">
-                                        <img src={img.src} alt={img.alt} />
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
-                        ) : (
-                            <p className="no-images">尚無圖片</p>
-                        )}
+   {/* ⭐這裡包 loading */}
+            {loading ? (
+                <div className="projects-loading">資料載入中...</div>
+            ) : (
+                projects.map((proj, i) => (
+                    <div key={i}>
+                        <p className="subtitle">{proj.title}</p>
+                        <p className="subtitle1">{proj.title1}</p>
+                        <div className="image-grid">
+                            {proj.images.length > 0 ? (
+                                <Swiper
+                                    className="project-swiper"
+                                    spaceBetween={10}
+                                    navigation
+                                    modules={[Navigation, Pagination]}
+                                    breakpoints={{
+                                        320: { slidesPerView: 1 },
+                                        640: { slidesPerView: 2 },
+                                        1024: { slidesPerView: 3 },
+                                        1440: { slidesPerView: 4 },
+                                    }}
+                                >
+                                    {proj.images.map((img, j) => (
+                                        <SwiperSlide key={j} className="project-slide">
+                                            <img src={img.src} alt={img.alt} />
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
+                            ) : (
+                                <p className="no-images">尚無圖片</p>
+                            )}
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))
+            )}
         </div>
     );
 };
