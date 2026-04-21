@@ -17,9 +17,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import img1 from "../../assets/首頁輪播照片/image1.png";
-import img2 from "../../assets/首頁輪播照片/image2.png";
-import img3 from "../../assets/首頁輪播照片/image3.png";
+
 
 // 引入 動畫套件
 import { motion } from "framer-motion";
@@ -31,15 +29,16 @@ const images = Array.from({ length: 6 }, (_, i) =>
 const swiperData = [
     {
         id: 1,
-        image: img1,
+        image: require("../../assets/homepagCarousel/image1.png"),
     },
     {
         id: 2,
-        image: img2,
+        image: require("../../assets/homepagCarousel/image2.png"),
     },
      {
         id: 3,
-        image: img3,
+        image: require("../../assets/homepagCarousel/image3.png"),
+        
     },
    
 ];
