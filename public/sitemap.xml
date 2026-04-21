@@ -5,24 +5,25 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
   http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
   <url>
     <loc>https://ea-fon.com/</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-04-22</lastmod>
   </url>
 
   <url>
     <loc>https://ea-fon.com/about</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-04-22</lastmod>
   </url>
 
   <url>
     <loc>https://ea-fon.com/construction</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-04-22</lastmod>
   </url>
 
   <url>
     <loc>https://ea-fon.com/excavator</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-04-22</lastmod>
   </url>
 
 </urlset>
