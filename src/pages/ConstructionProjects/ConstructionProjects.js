@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./ConstructionProjects.css";
 // React 元件从這裡來
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -34,7 +34,7 @@ const allProjectCategories = {
         ]
     },
     civil: {
-        title: "工程實積｜土木工程實績",
+        title: "工程實積｜土方工程實績",
         projects: [
             {
                 title: "101年文山區萬芳路災害72小時搶通完成",
@@ -76,7 +76,11 @@ const allProjectCategories = {
                 title: "文山區光輝路土方工程  黏土及岩盤總數量10000米",
                 images: [
                     { src: require("../../assets/construction/image 67.png"), alt: "文山區光輝路土方工程 1" },
-                    { src: require("../../assets/construction/image 68.png"), alt: "文山區光輝路土方工程 2" }
+                    { src: require("../../assets/construction/image 68.png"), alt: "文山區光輝路土方工程 2" },
+                    { src: require("../../assets/construction/image 134.png"), alt: "文山區光輝路土方工程 3" },
+                    { src: require("../../assets/construction/image 135.png"), alt: "文山區光輝路土方工程 4" },
+                    { src: require("../../assets/construction/image 136.png"), alt: "文山區光輝路土方工程 5" },
+                    { src: require("../../assets/construction/image 137.png"), alt: "文山區光輝路土方工程 6" }
                 ]
             },
             {
@@ -87,7 +91,8 @@ const allProjectCategories = {
                     { src: require("../../assets/construction/image 71.png"), alt: "蘇迪勒颱風緊急清淤 3" },
                     { src: require("../../assets/construction/image 72.png"), alt: "蘇迪勒颱風緊急清淤 4" }
                 ]
-            }
+            },
+
         ]
     }
     ,
@@ -228,7 +233,7 @@ const ConstructionProjects = () => {
     const [loading, setLoading] = useState(false);
 
     const { title, projects } = allProjectCategories[currentCategory];
-     // ⭐監聽分類切換
+    // ⭐監聽分類切換
     useEffect(() => {
         setLoading(true);
 
@@ -250,7 +255,7 @@ const ConstructionProjects = () => {
                 <button onClick={() => setCurrentCategory("landscape")}>景觀工程</button>
             </div>
             <h2 className="projects-title">{title}</h2>
-   {/* ⭐這裡包 loading */}
+            {/* ⭐這裡包 loading */}
             {loading ? (
                 <div className="projects-loading">資料載入中...</div>
             ) : (
