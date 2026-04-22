@@ -4,7 +4,19 @@ import vennImage from "../../assets/venn-diagram.png";
 import orgImage from "../../assets/org-structure.png";
 import centuryImage from "../../assets/century.png";
 import goalImage from "../../assets/goal-image.png";
+import { Helmet } from "react-helmet-async";
 import AboutTItle from "../../componets/About/AboutTitle"
+
+  <Helmet>
+    <title>
+      關於逸峰營造｜工程技術與企業理念
+    </title>
+
+    <meta
+      name="description"
+      content="關於逸峰營造,逸峰營造企業組織架構,逸峰營造工程技術,逸峰營造未來展望"
+    />
+  </Helmet>
 
 const About = () => {
     const [view, setView] = useState('default');
