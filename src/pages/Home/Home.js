@@ -35,17 +35,20 @@ const swiperData = [
         id: 2,
         image: require("../../assets/homepagCarousel/image2.png"),
     },
-     {
+    {
         id: 3,
         image: require("../../assets/homepagCarousel/image3.png"),
-        
+
     },
-   
+
 ];
 
 const Home = () => {
     return (
         <div>
+            <h1 className="seo-title">
+                逸峰營造有限公司
+            </h1>
             <div className="swiper-container">
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}

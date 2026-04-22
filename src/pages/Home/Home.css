@@ -1,5 +1,8 @@
 /******* 共用區 *******/
-
+.seo-title{
+  position:absolute;
+  left:-9999px;
+}
 body {
   font-family: 'Noto Sans TC', sans-serif;
   line-height: 1.8;
