@@ -49,6 +49,7 @@ const Excavator = () => {
       </h2>
 
       <div className="excavator-grid">
+        
         {excavatorData[tab].map((item, index) => (
           <div className="excavator-card" key={index}>
             <img src={item.src} alt={item.label} loading="lazy" />
