@@ -198,6 +198,10 @@ const allProjectCategories = {
                     { src: require("../../assets/水利工程實績/1.護坡緊急搶修/image4.jpg"), alt: "護坡緊急搶修4" },
                     { src: require("../../assets/水利工程實績/1.護坡緊急搶修/image5.jpg"), alt: "護坡緊急搶修5" },
                     { src: require("../../assets/水利工程實績/1.護坡緊急搶修/image6.jpg"), alt: "護坡緊急搶修6" },
+                    { src: require("../../assets/水利工程實績/1.護坡緊急搶修/image7.jpg"), alt: "護坡緊急搶修7" },
+                    { src: require("../../assets/水利工程實績/1.護坡緊急搶修/image8.png"), alt: "護坡緊急搶修8" },
+                    { src: require("../../assets/水利工程實績/1.護坡緊急搶修/image9.png"), alt: "護坡緊急搶修9" },
+                    { src: require("../../assets/水利工程實績/1.護坡緊急搶修/image10.png"), alt: "護坡緊急搶修10" },
 
 
                 ]
@@ -361,9 +365,15 @@ const allProjectCategories = {
                 ]
             },
             {
-                title: "邊坡基礎排樁工程-空",
+                title: "邊坡基礎排樁工程",
                 images: [
-                 
+                    { src: require("../../assets/水保工程實績/4.邊坡基礎排樁工程/image1.jpg"), alt: "邊坡基礎排樁工程1" },
+                    { src: require("../../assets/水保工程實績/4.邊坡基礎排樁工程/image2.jpg"), alt: "邊坡基礎排樁工程2" },
+                    { src: require("../../assets/水保工程實績/4.邊坡基礎排樁工程/image3.jpg"), alt: "邊坡基礎排樁工程3" },
+                    { src: require("../../assets/水保工程實績/4.邊坡基礎排樁工程/image4.jpg"), alt: "邊坡基礎排樁工程4" },
+                    { src: require("../../assets/水保工程實績/4.邊坡基礎排樁工程/image5.jpg"), alt: "邊坡基礎排樁工程5" },
+                    { src: require("../../assets/水保工程實績/4.邊坡基礎排樁工程/image6.jpg"), alt: "邊坡基礎排樁工程6" },
+
                 ]
             },
               {
