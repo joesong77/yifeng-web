@@ -45,6 +45,7 @@ const allProjectCategories = {
                     { src: require("../../assets/土方工程實績/1.航空城路基回填31000米/image4.jpg"), alt: "航空城路基回填4" },
                     { src: require("../../assets/土方工程實績/1.航空城路基回填31000米/image5.jpg"), alt: "航空城路基回填5" },
                     { src: require("../../assets/土方工程實績/1.航空城路基回填31000米/image6.png"), alt: "航空城路基回填6" },
+                    { src: require("../../assets/土方工程實績/1.航空城路基回填31000米/image7.png"), alt: "航空城路基回填7" },
 
                 ]
             },
