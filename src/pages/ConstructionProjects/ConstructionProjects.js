@@ -37,59 +37,79 @@ const allProjectCategories = {
         title: "工程實積｜土方工程實績",
         projects: [
             {
-                title: "101年文山區萬芳路災害72小時搶通完成",
+                title: "航空城路基回填31000米",
                 images: [
-                    { src: require("../../assets/construction/image 56.png"), alt: "萬芳路災害 1" },
-                    { src: require("../../assets/construction/image 62.png"), alt: "萬芳路災害 2" },
-                    { src: require("../../assets/construction/image 57.png"), alt: "萬芳路災害 3" }
+                    { src: require("../../assets/土方工程實績/1.航空城路基回填31000米/image1.png"), alt: "航空城路基回填1" },
+                    { src: require("../../assets/土方工程實績/1.航空城路基回填31000米/image2.png"), alt: "航空城路基回填2" },
+                    { src: require("../../assets/土方工程實績/1.航空城路基回填31000米/image3.jpg"), alt: "航空城路基回填3" },
+                    { src: require("../../assets/土方工程實績/1.航空城路基回填31000米/image4.jpg"), alt: "航空城路基回填4" },
+                    { src: require("../../assets/土方工程實績/1.航空城路基回填31000米/image5.jpg"), alt: "航空城路基回填5" },
+                    { src: require("../../assets/土方工程實績/1.航空城路基回填31000米/image6.png"), alt: "航空城路基回填6" },
+
                 ]
             },
             {
-                title: "排水溝及道路修繕工程",
+                title: "桃園GO3開挖",
                 images: [
-                    { src: require("../../assets/construction/image 58.png"), alt: "排水溝及道路修繕工程 1" },
-                    { src: require("../../assets/construction/image 59.png"), alt: "排水溝及道路修繕工程 2" }
+                    { src: require("../../assets/土方工程實績/2.桃園GO3開挖/image1.png"), alt: "桃園GO3開挖1" },
+                    { src: require("../../assets/土方工程實績/2.桃園GO3開挖/image2.png"), alt: "桃園GO3開挖2" },
+                    { src: require("../../assets/土方工程實績/2.桃園GO3開挖/image3.png"), alt: "桃園GO3開挖3" },
+                    { src: require("../../assets/土方工程實績/2.桃園GO3開挖/image4.png"), alt: "桃園GO3開挖3" },
+                    { src: require("../../assets/土方工程實績/2.桃園GO3開挖/image5.png"), alt: "桃園GO3開挖5" },
+
                 ]
             },
             {
-                title: "雨水地下水道人孔更新工程",
+                title: "木柵建案",
                 images: [
-                    { src: require("../../assets/construction/image 60.png"), alt: "雨水地下水道人孔更新工程 1" },
-                    { src: require("../../assets/construction/image 61.png"), alt: "雨水地下水道人孔更新工程 2" }
+
                 ]
             },
             {
-                title: "桃捷綠線土方工程 總數量20萬米最大深度34米(土 級配 岩盤混合)",
+                title: "桃園捷運結構物回填",
                 images: [
-                    { src: require("../../assets/construction/image 63.png"), alt: "桃捷綠線土方工程 1" },
-                    { src: require("../../assets/construction/image 64.png"), alt: "桃捷綠線土方工程 2" }
+                    { src: require("../../assets/土方工程實績/3.桃園捷運結構物回填/image1.png"), alt: "桃園捷運結構物回填 1" },
+                    { src: require("../../assets/土方工程實績/3.桃園捷運結構物回填/image2.png"), alt: "桃園捷運結構物回填 2" },
+                    { src: require("../../assets/土方工程實績/3.桃園捷運結構物回填/image3.png"), alt: "桃園捷運結構物回填 3" },
+
                 ]
             },
             {
-                title: "台北吳興街土方工程 岩盤抗壓強度12000磅 總數1.2萬米",
+                title: "青園國小",
                 images: [
-                    { src: require("../../assets/construction/image 65.png"), alt: "台北吳興街土方工程 1" },
-                    { src: require("../../assets/construction/image 66.png"), alt: "台北吳興街土方工程 2" }
+
                 ]
             },
             {
                 title: "文山區光輝路土方工程  黏土及岩盤總數量10000米",
                 images: [
-                    { src: require("../../assets/construction/image 67.png"), alt: "文山區光輝路土方工程 1" },
-                    { src: require("../../assets/construction/image 68.png"), alt: "文山區光輝路土方工程 2" },
-                    { src: require("../../assets/construction/image 134.png"), alt: "文山區光輝路土方工程 3" },
-                    { src: require("../../assets/construction/image 135.png"), alt: "文山區光輝路土方工程 4" },
-                    { src: require("../../assets/construction/image 136.png"), alt: "文山區光輝路土方工程 5" },
-                    { src: require("../../assets/construction/image 137.png"), alt: "文山區光輝路土方工程 6" }
+                    { src: require("../../assets/土方工程實績/4.文山區光輝路土方工程  黏土及岩盤總數量10000米/image1.png"), alt: "文山區光輝路土方工程 1" },
+                    { src: require("../../assets/土方工程實績/4.文山區光輝路土方工程  黏土及岩盤總數量10000米/image2.png"), alt: "文山區光輝路土方工程 2" },
+                    { src: require("../../assets/土方工程實績/4.文山區光輝路土方工程  黏土及岩盤總數量10000米/image3.jpg"), alt: "文山區光輝路土方工程 3" },
+                    { src: require("../../assets/土方工程實績/4.文山區光輝路土方工程  黏土及岩盤總數量10000米/image4.png"), alt: "文山區光輝路土方工程 4" },
+
                 ]
             },
             {
-                title: "蘇迪勒颱風緊急清淤 總數量40000米",
+                title: "桃捷引道段開挖",
                 images: [
-                    { src: require("../../assets/construction/image 69.png"), alt: "蘇迪勒颱風緊急清淤 1" },
-                    { src: require("../../assets/construction/image 70.png"), alt: "蘇迪勒颱風緊急清淤 2" },
-                    { src: require("../../assets/construction/image 71.png"), alt: "蘇迪勒颱風緊急清淤 3" },
-                    { src: require("../../assets/construction/image 72.png"), alt: "蘇迪勒颱風緊急清淤 4" }
+                    { src: require("../../assets/土方工程實績/5.桃捷引道段開挖/image1.png"), alt: "桃捷引道段開挖 1" },
+                    { src: require("../../assets/土方工程實績/5.桃捷引道段開挖/image2.png"), alt: "桃捷引道段開挖 2" },
+                    { src: require("../../assets/土方工程實績/5.桃捷引道段開挖/image3.jpg"), alt: "桃捷引道段開挖 3" },
+                    { src: require("../../assets/土方工程實績/5.桃捷引道段開挖/image4.jpg"), alt: "桃捷引道段開挖 4" },
+                    { src: require("../../assets/土方工程實績/5.桃捷引道段開挖/image5.jpg"), alt: "桃捷引道段開挖 5" },
+
+                ]
+            },
+               {
+                title: "桃園捷運vs4土方",
+                images: [
+                    { src: require("../../assets/土方工程實績/6.桃園捷運vs4土方/image1.jpg"), alt: "桃園捷運vs4土方 1" },
+                    { src: require("../../assets/土方工程實績/6.桃園捷運vs4土方/image2.jpg"), alt: "桃園捷運vs4土方 2" },
+                    { src: require("../../assets/土方工程實績/6.桃園捷運vs4土方/image3.jpg"), alt: "桃園捷運vs4土方 3" },
+                    
+ 
+
                 ]
             },
 
