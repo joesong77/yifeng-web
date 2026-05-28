@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Excavator.css";
 import images from "../../assets/excavator/image";
+import SummaryTable from "../../assets/excavator/總表.jpg"
 
 const excavatorData = {
   large: [
@@ -30,10 +31,13 @@ const excavatorData = {
 };
 
 const Excavator = () => {
-  const [tab, setTab] = useState("large");
+  const [tab, setTab] = useState("summary");
   return (
     <div className="excavator-container">
       <div className="excavator-tabs">
+        <button className={tab === "summary" ? "active" : ""} onClick={() => setTab("summary")}>
+          總表
+        </button>
         <button className={tab === "large" ? "active" : ""} onClick={() => setTab("large")}>
           大型怪手
         </button>
@@ -45,9 +49,18 @@ const Excavator = () => {
         </button>
       </div>
       <h2 className="excavator-title">
-        機具租賃｜{tab === "large" ? "大型怪手" : tab === "small" ? "小型怪手" : "其他器具"}
+        機具租賃｜{tab === "summary" ?"總表": tab === "large" ? "大型怪手" : tab === "small" ? "小型怪手" : "其他器具"}
       </h2>
-
+      
+      {tab ==="summary"?(
+        <div className="table-img-wrap">
+                <img
+                        src={SummaryTable}
+                        alt="summarytable"
+                    />
+          
+         </div> 
+      ):(
       <div className="excavator-grid">
         
         {excavatorData[tab].map((item, index) => (
@@ -57,7 +70,9 @@ const Excavator = () => {
           </div>
         ))}
       </div>
+      )}
     </div>
+      
   );
 };
 
