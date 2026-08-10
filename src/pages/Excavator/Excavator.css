@@ -1,14 +1,4 @@
-.table-img-wrap{
-   width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-.table-img-wrap img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+
 .excavator-container {
   padding: 20px;
     font-family: Arial, sans-serif;
@@ -47,6 +37,17 @@
 .excavator-tabs button.active {
   background-color: #006400;
   color: white;
+}
+.excavator-table-img-wrap{
+   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.excavator-table-img-wrap img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 

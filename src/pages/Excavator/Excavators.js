@@ -53,7 +53,7 @@ const Excavator = () => {
       </h2>
       
       {tab ==="summary"?(
-        <div className="table-img-wrap">
+        <div className="excavator-table-img-wrap">
                 <img
                         src={SummaryTable}
                         alt="summarytable"
