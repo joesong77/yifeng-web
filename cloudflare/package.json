@@ -1,0 +1,24 @@
+{
+  "name": "yifeng-project-admin",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "npm run build && wrangler dev --ip 127.0.0.1",
+    "deploy": "npm run build && wrangler deploy",
+    "test": "node --test",
+    "seed": "node generate-seed.mjs"
+  },
+  "dependencies": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@babel/parser": "8.1.2",
+    "vite": "7.3.6",
+    "wrangler": "4.162.0"
+  }
+}

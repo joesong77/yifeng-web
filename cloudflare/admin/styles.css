@@ -1,0 +1,57 @@
+:root{font-family:system-ui,"Noto Sans TC",sans-serif;color:#172c22;background:#f2f5f2;font-synthesis:none;--ink:#133326;--green:#1c5940;--line:#d8e2db;--muted:#506457}
+*{box-sizing:border-box}
+body,h1,h2,h3,p{margin:0}
+.top{background:var(--ink);color:white}
+.top-inner,.page{width:min(1200px,100%);margin:auto;padding-inline:clamp(16px,4vw,48px)}
+.top-inner{display:flex;justify-content:space-between;gap:12px;align-items:center;min-height:70px}
+.top a,.top .outline{color:white}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px}
+.brand small{display:block;font-size:11px;color:#d8e8df;font-weight:400}
+.brand-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid #719080;border-radius:9px}
+.page{padding-block:clamp(26px,5vw,54px)}
+.login{max-width:510px;padding-top:clamp(55px,10vw,120px)}
+.login form{display:grid;gap:15px;padding:30px}
+.login .primary{justify-self:start}
+.eyebrow{color:var(--green);font-size:.75rem;font-weight:750;letter-spacing:.14em}
+h1{font-size:clamp(1.9rem,4vw,2.6rem);margin-block:4px 6px}
+h2{margin-bottom:10px;font-size:1.3rem}
+h3{margin-bottom:7px;font-size:1.1rem}
+.muted,.meta{color:var(--muted);font-size:.9rem;line-height:1.55}
+.hero{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.layout{display:grid;grid-template-columns:minmax(250px,.9fr) minmax(0,1.6fr);gap:18px;align-items:start}
+.panel{padding:clamp(15px,2.6vw,25px);background:white;border:1px solid var(--line);border-radius:13px}
+.filters,.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label{display:grid;gap:5px;font-size:.9rem;font-weight:600}
+input,select,textarea,button{font:inherit}
+input:not([type=checkbox]),select,textarea{border:1px solid #b8c8bd;border-radius:7px;padding:.58em .62em;background:white;color:inherit;width:100%;min-width:0}
+textarea{resize:vertical}
+button{cursor:pointer;border:1px solid #b8c8bd;border-radius:7px;padding:.48em .75em;background:white;color:inherit}
+button:disabled{opacity:.55;cursor:not-allowed}
+:focus-visible{outline:2px solid #21845c;outline-offset:2px}
+.primary{color:white;background:var(--green);border-color:var(--green);font-weight:650;padding:.58em .85em}
+.outline{background:transparent;border-color:#789287}
+.actions,.editor-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.actions a,.legacy a{font-size:.84rem}
+.list>p{margin-block:11px}
+.list ul,.photos{padding:0;margin:0;display:grid;gap:8px;list-style:none}
+.list ul{max-height:590px;overflow:auto}
+.list li button{display:grid;width:100%;grid-template-columns:1fr auto;gap:4px 8px;text-align:left;align-items:start;padding:10px;overflow-wrap:anywhere}
+.list li button[aria-pressed=true]{background:#eaf4ed;border-color:#559676}
+.list strong{font-size:.94rem;grid-column:1/-1}
+.status{align-self:center;border-radius:15px;padding:2px 8px;font-size:.76rem;background:#eef0ee;white-space:nowrap}
+.status.live{background:#dbefe2;color:#205437}
+.empty{min-height:150px}
+fieldset{padding:0;border:none;margin:0;min-width:0}
+.editor fieldset>label,.editor .two,.editor .photos{margin-block:13px}
+.check{display:flex;gap:8px;align-items:center}
+hr{border:0;border-top:1px solid var(--line);margin-block:22px}
+.photos li{display:grid;grid-template-columns:105px minmax(0,1fr);gap:11px;align-items:center;padding:9px;border:1px solid var(--line);border-radius:9px}
+.photos img,.legacy{width:100%;height:77px;border-radius:6px;object-fit:cover;background:#edf2ee}
+.legacy{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:.78rem;color:var(--muted)}
+.photo-fields .actions{margin-top:7px}
+.photo-fields button{font-size:.8rem}
+.danger,.error{color:#8c242a}
+.error,.notice{border-radius:8px;padding:10px 12px;margin-bottom:12px;background:#fceced}
+.notice{background:#e1f2e8;color:var(--ink)}
+@media(max-width:740px){.layout{grid-template-columns:1fr}.list ul{max-height:240px}}
+@media(max-width:375px){.two,.filters{grid-template-columns:1fr}.photos li{grid-template-columns:80px minmax(0,1fr)}}

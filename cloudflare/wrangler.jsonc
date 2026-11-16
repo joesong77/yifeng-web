@@ -1,0 +1,20 @@
+{
+  "name": "yifeng-project-admin",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-16",
+  "preview_urls": false,
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "yifeng-projects",
+    "database_id": "00000000-0000-0000-0000-000000000000",
+    "migrations_dir": "migrations"
+  }],
+  "r2_buckets": [{ "binding": "PHOTOS", "bucket_name": "yifeng-project-photos" }],
+  "ratelimits": [{ "name": "LOGIN_LIMIT", "namespace_id": "891467", "simple": { "limit": 6, "period": 60 } }],
+  "vars": { "PUBLIC_SITE_URL": "https://ea-fon.com" }
+}

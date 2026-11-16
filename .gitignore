@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Cloudflare management platform
+/cloudflare/node_modules/
+/cloudflare/dist/
+/cloudflare/.wrangler/
+/cloudflare/.dev.vars*
+!/cloudflare/.dev.vars.example
