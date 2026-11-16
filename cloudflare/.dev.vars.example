@@ -1,0 +1,2 @@
+# 複製成 .dev.vars，將下方的文字換成你自己的開發密碼
+ADMIN_PASSWORD="replace-with-your-local-password"

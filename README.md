@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## 工程實績管理後台
+
+Cloudflare Workers、D1 與 R2 的設定及 Netlify 串接方式請見 [工程實績後台部署說明](cloudflare/README.md)。
